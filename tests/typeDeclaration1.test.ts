@@ -11,6 +11,9 @@ describe('Datatype declaration', function (): void {
         let age:number = 25;
         let married:boolean = false;
 
+        // Typescript keeps variable's datatype consistent
+        // name = 4; //error
+
         // array
         let names: string[] = ["foo", "bar", "fosh"];
         let ages: number[] = [40, 20, 30];
@@ -58,8 +61,6 @@ describe('Datatype declaration', function (): void {
             name: "Bar",
             type: CustomerType.GOLD
         }
-        // Typescript keeps variable's datatype consistent
-        // name = 4;
 
     });
 });
