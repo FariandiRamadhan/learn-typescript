@@ -1,4 +1,4 @@
-import {Category, Product, Customer, CustomerType} from "../srcs/typeDeclaration1";
+import {Category, Product, Customer, CustomerType, OptionalProperty} from "../srcs/typeDeclaration1";
 describe('Datatype declaration', function (): void {
     it("should declare datatype", function(){
 
@@ -47,6 +47,11 @@ describe('Datatype declaration', function (): void {
             // uncomplete property
             // new assign property
             // category: 1
+        }
+        const Opt:OptionalProperty = {
+            id: 7,
+            name: "bar"
+            // description is optional
         }
 
         // Object Type

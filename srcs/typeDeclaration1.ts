@@ -8,6 +8,11 @@ export type Product = {
     price:number
     category: Category
 }
+export type OptionalProperty = {
+    id: number,
+    name: string,
+    description?: string
+}
 
 // Enum
 export enum CustomerType{
