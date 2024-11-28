@@ -9,12 +9,4 @@ describe('Interface declaration2', function (): void {
         }
         expect(personObj.func("Foo")).toBe("Hello Foo");
     });
-    // it("should print array or object", function (){
-
-    //     expect(obj["key"]).toBe("foo");
-    // })
-    // it("should print extendable interface", function (){
-
-    //     expect(hr.numberOfEmployee).toBe(5);
-    // })
 });

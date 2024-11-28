@@ -11,8 +11,4 @@ describe('type declaration2', function (): void {
         const myIdentity: Person = identity as Person
         expect(myIdentity.name).toBe("baz");
     })
-    // it("should print extendable interface", function (){
-
-    //     expect(hr.numberOfEmployee).toBe(5);
-    // })
 });
