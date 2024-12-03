@@ -29,3 +29,39 @@ export class Driver extends Computer{
         return this.macAddress + this.name + "::" + value;
     }
 }
+
+// Polymorphism
+export class Transport{
+    constructor(public v_name: string){
+
+    }
+}
+
+export class Vehicle extends Transport{}
+
+/**
+ * Abstract Class
+ * Cannot turned into object with keyword new
+ * Can only be used as parent class
+ */
+export abstract class Customer{
+    readonly id: number;
+    abstract name: string;
+
+    constructor(id: number){
+        this.id = id
+    }
+    abstract sayHello(name: string): void
+}
+
+export class Coupon extends Customer{
+    name: string;
+    constructor(id: number, name: string){
+        super(id);
+        this.name = name;
+    }
+    sayHello(name: string): void {
+        console.log(`${this.name} Coupon Id is ${name}`);
+    }
+
+}
